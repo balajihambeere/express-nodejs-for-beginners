@@ -1,0 +1,18 @@
+{
+  "name": "noderestapi",
+  "version": "1.0.0",
+  "description": "building restfull api's using nodejs and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "balaji hambeere",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.2.14"
+  }
+}
