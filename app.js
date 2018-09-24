@@ -11,7 +11,8 @@ mongoose.Promise = global.Promise;
 
 const options = { useNewUrlParser: true };
 
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds157762.mlab.com:57762/<databasename>', options,
+//change connection string
+mongoose.connect('mongodb://oorja:oorja123@ds161312.mlab.com:61312/hambeeredb', options,
     function (error) {
         if (error) { console.log(error); }
     });
@@ -22,10 +23,10 @@ app.use(bodyParser.json());
 
 routes(app);
 
-app.get('/', (req, res) =>
-    res.send(`Server is running on port ${PORT}`)
+app.get('/', (request, response) =>
+    response.send(`Server is running on port ${PORT}`)
 );
 
 app.listen(PORT, () =>
-    console.log(`Server is running on port ${PORT}`)
+    console.log(`Server is running on http://localhost:${PORT}`)
 );

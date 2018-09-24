@@ -11,5 +11,6 @@ const routes = (app) => {
     app.route('/customer/:customerId').put(customer.updateCustomer);
     
     app.route('/customer/:customerId').delete(customer.deleteCustomer);
-}
+};
+
 module.exports = routes;
